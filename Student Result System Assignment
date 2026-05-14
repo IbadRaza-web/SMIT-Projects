@@ -1,0 +1,38 @@
+
+
+print("=== Student Result System ===\n")
+student_name = input("Enter Student Name: ")
+roll_number = input("Enter Roll Number: ")
+
+
+marks_sub1 = float(input("Enter Marks of Subject 1: "))
+marks_sub2 = float(input("Enter Marks of Subject 2: "))
+marks_sub3 = float(input("Enter Marks of Subject 3: "))
+
+total_marks = marks_sub1 + marks_sub2 + marks_sub3
+max_total = 300  # 3 subjects × 100 each
+percentage = (total_marks / max_total) * 100
+
+if percentage >= 80:
+    result = "Pass"
+    grade = "A+"
+elif percentage >= 70:
+    result = "Pass"
+    grade = "A"
+elif percentage >= 60:
+    result = "Pass"
+    grade = "B"
+elif percentage >= 50:
+    result = "Pass"
+    grade = "C"
+else:
+    result = "Fail"
+    grade = "Fail"
+
+print("\n--- Student Result ---")
+print(f"Name: {student_name}")
+print(f"Roll Number: {roll_number}")
+print(f"Total Marks: {total_marks} / {max_total}")
+print(f"Percentage: {percentage:.2f}%")
+print(f"Result: {result}")
+print(f"Grade: {grade}")
